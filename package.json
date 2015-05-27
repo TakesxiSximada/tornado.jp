@@ -1,0 +1,28 @@
+{
+  "name": "tornado.jp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TakesxiSximada/tornado.jp.git"
+  },
+  "author": "TakesxiSximada",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TakesxiSximada/tornado.jp/issues"
+  },
+  "homepage": "https://github.com/TakesxiSximada/tornado.jp",
+  "dependencies": {
+    "bower": "^1.4.1",
+    "css-loader": "^0.14.3",
+    "gulp": "^3.8.11",
+    "node-libs-browser": "^0.5.2",
+    "style-loader": "^0.12.3",
+    "webpack": "^1.9.10",
+    "webpack-dev-server": "^1.9.0"
+  }
+}
