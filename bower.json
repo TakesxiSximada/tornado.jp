@@ -1,0 +1,16 @@
+{
+  "name": "tornado.jp",
+  "version": "0.0.0",
+  "homepage": "https://github.com/TakesxiSximada/tornado.jp",
+  "authors": [
+    "TakesxiSximada <takesxi.sximada@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
