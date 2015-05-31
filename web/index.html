@@ -1,202 +1,143 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>tornado.jp</title>
-    <script src="/static/bundle.js"></script>
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <link href='http://fonts.googleapis.com/css?family=Sansita+One' rel='stylesheet' type='text/css'>o
-    <style>
-      *, h1, h2, h3, h4, h5, h6, .button {
-          font-family: 'Sansita One', cursive;
-      };
-    </style>
+    <title>Tornado.jp</title>
+
+    <script src="static/bundle.js"></script>
+    <script src="static/lib/threejs/three.min.js"></script>
+    <script src="static/js/TornadoWeb.js"></script>
+    <link href="static/css/index.css" rel="stylesheet"/>
   </head>
 
   <body>
-    <div class="row">
-      <div class="large-3 columns">
-        <h1><img src="/static/img/logo.jpg"/></h1>
+    <header>
+      <div class="banner">
+        <!-- <img alt="Torando.jp" src="static/img/logo.jpg"/> -->
       </div>
-      <div class="large-9 columns">
-        <ul class="right button-group">
-          <li><a href="#about" class="button">About</a></li>
-          <li><a href="#examples" class="button">Examples</a></li>
-          <li><a href="#document" class="button">Document</a></li>
-          <li><a href="#learning" class="button">Learning</a></li>
-          <li><a href="#benchmark" class="button">Benchmark</a></li>
-        </ul>
-      </div>
-    </div>
+    </header>
 
-    <div class="row">
-      <div class="large-12 columns">
-        <div id="slider">
-          <!-- <video autoplay="play" preload="auto" loop> -->
-          <!--   <source src="_/static/movies/tornado.mp4" type="video/mp4" /> -->
-          <!-- </video> -->
-          <img src="/static/img/bg.jpg"/>
-        </div>
+    <section>
+      <h1>It works!!</h1>
+      <div id="tornado-view" />
+      <div id="container">
+    </section>
 
-        <hr/>
-      </div>
-    </div>
+    <!-- <section> -->
+    <!--   <h1>Examples</h1> -->
 
-    <div class="row">
-      <div class="large-12 columns">
-        <h1>What is Tornado?</h1>
-        <p>
-          Tornado is a Python web framework and asynchronous networking library, originally developed at FriendFeed. By using non-blocking network I/O, Tornado can scale to tens of thousands of open connections, making it ideal for long polling, WebSockets, and other applications that require a long-lived connection to each user.
-        </p>
-      </div>
-    </div>
+    <!--   <section> -->
+    <!--     <h2>Game Backend</h2> -->
+    <!--   </section> -->
 
+    <!--   <section> -->
+    <!--     <h2>Chat</h2> -->
+    <!--   </section> -->
 
-    <div id="examples" class="row">
-      <div class="large-12 columns">
-        <h1>Examples</h1>
-        <p>
-          Tornado is a Python web framework and asynchronous networking library, originally developed at FriendFeed. By using non-blocking network I/O, Tornado can scale to tens of thousands of open connections, making it ideal for long polling, WebSockets, and other applications that require a long-lived connection to each user.
-        </p>
-      </div>
+    <!--   <section> -->
+    <!--     <h2>Admin Site</h2> -->
+    <!--   </section> -->
 
-      <div class="large-4 columns">
-        <img src="/static/img/bg.jpg"/>
-        <h4>This is a content section.</h4>
-        <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
-      </div>
-      <div class="large-4 columns">
-        <img src="/static/img/bg.jpg"/>
-        <h4>This is a content section.</h4>
-        <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
-      </div>
-      <div class="large-4 columns">
-        <img src="/static/img/bg.jpg"/>
-        <h4>This is a content section.</h4>
-        <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
-      </div>
-    </div>
+    <!--   <section> -->
+    <!--     <h2>Shopping Cart</h2> -->
+    <!--   </section> -->
 
+    <!--   <section> -->
+    <!--     <h2>Blog</h2> -->
+    <!--   </section> -->
 
-    <div id="document" class="row">
-      <div class="large-12 columns">
-        <h1>Document</h1>
-        <p>
-          Tornado is a Python web framework and asynchronous networking library, originally developed at FriendFeed. By using non-blocking network I/O, Tornado can scale to tens of thousands of open connections, making it ideal for long polling, WebSockets, and other applications that require a long-lived connection to each user.
-        </p>
-      </div>
-      <div class="large-12">
-        <a href="https://github.com/tornadoweb/tornado"><font size="500px" color="black"><i class="fa fa-github"></i></font></a>
-        <a href="http://www.tornadoweb.org/"><font size="500px" color="black"><i class="fa fa-book"></i></font></a>
-      </div>
+    <!--   <section> -->
+    <!--     <h2>Wiki</h2> -->
+    <!--   </section> -->
 
-      <div class="large-4 columns">
-        <img src="/static/img/bg.jpg"/>
-        <h4>This is a content section.</h4>
-        <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
-      </div>
-      <div class="large-4 columns">
-        <img src="/static/img/bg.jpg"/>
-        <h4>This is a content section.</h4>
-        <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
-      </div>
-      <div class="large-4 columns">
-        <img src="/static/img/bg.jpg"/>
-        <h4>This is a content section.</h4>
-        <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
-      </div>
-    </div>
+    <!-- </section> -->
 
-    <div id="learning" class="row">
-      <div class="large-12 columns">
-        <h1>Learning</h1>
-        <p>
-          Tornado is a Python web framework and asynchronous networking library, originally developed at FriendFeed. By using non-blocking network I/O, Tornado can scale to tens of thousands of open connections, making it ideal for long polling, WebSockets, and other applications that require a long-lived connection to each user.
-        </p>
-      </div>
+    <!-- <section> -->
+    <!--   <h1>Learning</h1> -->
 
-      <div class="large-4 columns">
-        <img src="/static/img/bg.jpg"/>
-        <h4>This is a content section.</h4>
-        http://www.amazon.co.jp/Introduction-Tornado-Michael-Dory/dp/1449309070
-        <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
-      </div>
-      <div class="large-4 columns">
-        <img src="/static/img/bg.jpg"/>
-        <h4>This is a content section.</h4>
-        <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
-      </div>
-      <div class="large-4 columns">
-        <img src="/static/img/bg.jpg"/>
-        <h4>This is a content section.</h4>
-        <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
-      </div>
-    </div>
+    <!--   <section> -->
+    <!--     <h2>Hello World</h2> -->
+    <!--   </section> -->
+
+    <!--   <section> -->
+    <!--     <h2>Deploy in Bluemix</h2> -->
+    <!--   </section> -->
+
+    <!--   <section> -->
+    <!--     <h2>Deploy in AWS</h2> -->
+    <!--   </section> -->
+
+    <!--   <section> -->
+    <!--     <h2>MySQL</h2> -->
+    <!--   </section> -->
+
+    <!--   <section> -->
+    <!--     <h2>PostgreSQL</h2> -->
+    <!--   </section> -->
+
+    <!--   <section> -->
+    <!--     <h2>RDS</h2> -->
+    <!--   </section> -->
+
+    <!--   <section> -->
+    <!--     <h2>Redshift</h2> -->
+    <!--   </section> -->
+
+    <!--   <section> -->
+    <!--     <h2>Redshift</h2> -->
+    <!--   </section> -->
+
+    <!-- </section> -->
 
 
-    <div id="benchmark" class="row">
-      <div class="large-12 columns">
-        <h1>Benchmark</h1>
-        <p>
-          Tornado is a Python web framework and asynchronous networking library, originally developed at FriendFeed. By using non-blocking network I/O, Tornado can scale to tens of thousands of open connections, making it ideal for long polling, WebSockets, and other applications that require a long-lived connection to each user.
-        </p>
-      </div>
+    <!-- <section> -->
+    <!--   <h1>Benchmark</h1> -->
 
-      <div class="large-4 columns">
-        <img src="/static/img/graph-1.png"/>
-        <h4>This is a content section.</h4>
-        <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
-      </div>
-      <div class="large-4 columns">
-        <img src="/static/img/graph-2.jpg"/>
-        <h4>This is a content section.</h4>
-        <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
-      </div>
-      <div class="large-4 columns">
-        <img src="/static/img/graph-3.jpg"/>
-        <h4>This is a content section.</h4>
-        <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
-      </div>
-    </div>
+    <!--   Tornadoの特徴は非同期処理にあります。 -->
 
+    <!--   <section> -->
+    <!--     <h2>Tornado(Python)</h2> -->
+    <!--   </section> -->
 
-    <div class="row">
-      <div class="large-12 columns">
+    <!--   <section> -->
+    <!--     <h2>Django(Python)</h2> -->
+    <!--   </section> -->
 
-        <div class="panel">
-          <h4>Get in touch!</h4>
+    <!--   <section> -->
+    <!--     <h2>Pyramid(Python)</h2> -->
+    <!--   </section> -->
 
-          <div class="row">
-            <div class="large-9 columns">
-              <p>We'd love to hear from you, you attractive person you.</p>
-            </div>
-            <div class="large-3 columns">
-              <a href="#" class="radius button right">Contact Us</a>
-            </div>
-          </div>
-        </div>
+    <!--   <section> -->
+    <!--     <h2>Ruby on Rails(Ruby)</h2> -->
+    <!--   </section> -->
 
-      </div>
-    </div>
+    <!--   <section> -->
+    <!--     <h2>Ruby on Rails(Ruby)</h2> -->
+    <!--   </section> -->
+
+    <!--   <section> -->
+    <!--     <h2>Revel(Go)</h2> -->
+    <!--   </section> -->
+
+    <!--   <section> -->
+    <!--     <h2>???(Node.js)</h2> -->
+    <!--   </section> -->
+
+    <!-- </SECTION> -->
 
 
-
-    <footer class="row">
-      <div class="large-12 columns">
-        <hr/>
-        <div class="row">
-          <div class="large-6 columns">
-            <p>© Copyright no one at all. Go to town.</p>
-          </div>
-          <div class="large-6 columns">
-            <ul class="inline-list right">
-              <li><a href="#">Link 1</a></li>
-              <li><a href="#">Link 2</a></li>
-              <li><a href="#">Link 3</a></li>
-              <li><a href="#">Link 4</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
+    <footer>
+      <div class="powered-by"><a href="http://www.tornadoweb.org/">Tornado</a></div>
+      <div class="powered-by"><a href="http://python.org">Python</a></div>
+      <div class="powered-by"><a href="http://bluemix.net">Bluemix</a></div>
+      <div class="copyright"><a href="https://about.me/TakesxiSximada">TakesxiSximada</a></div>
+      <div class="copyright-vendor"></div>
     </footer>
+    <script type="text/javascript">
+      <!--
+          var tornadoweb = TornadoWeb();
+          tornadoweb.init('#tornado-view');
+          tornadoweb.animate();
+        -->
+    </script>
   </body>
 </html>

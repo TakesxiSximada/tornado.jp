@@ -1,24 +1,25 @@
 {
-  "name": "tornado.jp",
-  "version": "0.0.0",
-  "homepage": "https://github.com/TakesxiSximada/tornado.jp",
-  "authors": [
-    "TakesxiSximada <takesxi.sximada@gmail.com>"
-  ],
-  "license": "MIT",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ],
-  "dependencies": {
-    "foundation": "~5.5.2",
-    "font-awesome": "~4.3.0",
-    "threejs": "*",
-    "react": "~0.13.3",
-    "bootstrap": "~3.3.4",
-    "vue": "~0.11.10"
-  }
+    "name": "tornado.jp",
+    "version": "0.0.0",
+    "homepage": "https://github.com/TakesxiSximada/tornado.jp",
+    "authors": [
+        "TakesxiSximada <takesxi.sximada@gmail.com>"
+    ],
+    "license": "MIT",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "dependencies": {
+        "foundation": "~5.5.2",
+        "font-awesome": "~4.3.0",
+        "threejs": "*",
+        "react": "~0.13.3",
+        "bootstrap": "~3.3.4",
+        "vue": "~0.11.10",
+        "d3": "~3.5.5"
+    }
 }
