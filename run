@@ -1,5 +1,6 @@
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
+import os
 import sys
 import argparse
 from tornado.web import (
@@ -7,6 +8,10 @@ from tornado.web import (
     RequestHandler,
     )
 from tornado.ioloop import IOLoop
+from sandstorm.handlers import YAStaticFileHandler
+
+_HERE = os.path.abspath(os.path.dirname(__file__))
+DEFAULT_WWW_ROOT = os.path.join(_HERE, 'www')
 
 
 class PingPongHandler(RequestHandler):
@@ -14,8 +19,9 @@ class PingPongHandler(RequestHandler):
         self.write('pong!!')
 
 
-def application_factory():
+def application_factory(www_root=DEFAULT_WWW_ROOT):
     app = Application([
+        (r'/', YAStaticFileHandler, {'path': www_root}),
         (r'/ping', PingPongHandler),
         ])
     return app
