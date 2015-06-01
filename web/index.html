@@ -6,6 +6,8 @@
     <script src="static/bundle.js"></script>
     <script src="static/lib/threejs/three.min.js"></script>
     <script src="static/js/TornadoWeb.js"></script>
+    <script src="static/js/tornado.js"></script>
+    <script src="static/js/Fire.js"></script>
     <link href="static/css/index.css" rel="stylesheet"/>
   </head>
 
@@ -19,7 +21,7 @@
     <section>
       <h1>It works!!</h1>
       <div id="tornado-view" />
-      <div id="container">
+      <div id="fire-view">
     </section>
 
     <!-- <section> -->
@@ -126,6 +128,8 @@
 
 
     <footer>
+      <div class="powered-by"><a href="http://threejs.org/">three.js</a></div>
+      <div class="powered-by"><a href="http://d3js.org/">D3.js</a></div>
       <div class="powered-by"><a href="http://www.tornadoweb.org/">Tornado</a></div>
       <div class="powered-by"><a href="http://python.org">Python</a></div>
       <div class="powered-by"><a href="http://bluemix.net">Bluemix</a></div>
@@ -133,10 +137,17 @@
       <div class="copyright-vendor"></div>
     </footer>
     <script type="text/javascript">
-      <!--
-          var tornadoweb = TornadoWeb();
-          tornadoweb.init('#tornado-view');
-          tornadoweb.animate();
+    <!--
+var anim = new TORNADO.TornadoAnimation('#tornado-view');
+anim.init();
+anim.animate();
+          // var tornadoweb = TornadoWeb();
+          // tornadoweb.init('#tornado-view');
+          // tornadoweb.animate();
+
+          // var fire = Fire();
+          // fire.init('#fire-view);
+          // fire.animate();
         -->
     </script>
   </body>

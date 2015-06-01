@@ -17,7 +17,7 @@
                 this.renderer = new THREE.WebGLRenderer({
                     antialias: false,
                 });
-                this.renderer.setPixelRatio(window.devicePixelRatio);
+                this.renderer.setPixelRatio(window.devicePixelRatioo);
                 this.add_fog();
                 this.on_window_resize();
                 this.particle_system = this.build_particle_system();
